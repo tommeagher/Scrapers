@@ -1,0 +1,127 @@
+Follow the Money — Tracking Companies&#39; Influence on Politics Free business journalism training before the conference; New York Central; 12:30 p.m. - 5 p.m.
+Welcome; Frisco/Burlington; 8:30 a.m. - 8:50 a.m.
+Getting started: Digging deep with data journalism; Frisco/Burlington; 9 a.m. - 9:50 a.m.
+Against All -Spanish- odds; Missouri Pacific; 9 a.m. - 9:50 a.m.
+Why learn programming: A reporter&#39;s perspective; Illinois Central; 9 a.m. - 9:50 a.m.
+NewsCamp::Text as data; New York Central; 9 a.m. - 9:50 a.m.
+Tableau for Beginners; Grand Hall I; 9 a.m. - 12:30 p.m.
+NewsCamp::Investigating text in the wild; New York Central; 10 a.m. - 10:50 a.m.
+Free tools for wrangling data; Illinois Central; 10 a.m. - 10:50 a.m.
+Bring your mapping dreams to fruition: Tricks to customize basic tools; Missouri Pacific; 10 a.m. - 10:50 a.m.
+How to track cheating in your local schools; Frisco/Burlington; 10 a.m. - 10:50 a.m.
+From your computer to the web: Using Microsoft Cloud and Google Docs; Missouri Pacific; 11 a.m. - 11:50 a.m.
+The art of requesting and negotiating data; Frisco/Burlington; 11 a.m. - 11:50 a.m.
+NewsCamp::Jam Sessions; Jeffersonian/  Knickerbocker; 11 a.m. - 5:50 p.m.
+NewsCamp::Tools for unstructured text; New York Central; 11 a.m. - 11:50 a.m.
+Social Media Sleuthing: Backgrounding people and companies; Illinois Central; 11 a.m. - 11:50 a.m.
+NewsCamp::Music Lessons; Wabash Cannonball; 1 p.m. - 4:50 p.m.
+Tableau for Pros; Grand Hall I; 1:30 p.m. - 5:30 p.m.
+Integrating CAR: Story ideas for the whole newsroom; Frisco/Burlington; 2 p.m. - 2:50 p.m.
+CSVKit; Missouri Pacific; 2 p.m. - 2:50 p.m.
+Network analysis for news; New York Central; 2 p.m. - 2:50 p.m.
+Locating the story: The latest in mapping; Illinois Central; 2 p.m. - 2:50 p.m.
+Data viz in 20 minutes: jQuery DataTables; Missouri Pacific; 3 p.m. - 3:50 p.m.
+CAR on a shoestring; New York Central; 3 p.m. - 3:50 p.m.
+Health analyses for any newsroom; Frisco/Burlington; 3 p.m. - 3:50 p.m.
+Worth doing for money - turning good work into money; Illinois Central; 3 p.m. - 3:50 p.m.
+Turning your stories into a tablet/phone app; New York Central; 4 p.m. - 4:50 p.m.
+Free tools for Web scraping without programming; Illinois Central; 4 p.m. - 4:50 p.m.
+Get the most out of Google Fusion Tables; Missouri Pacific; 4 p.m. - 4:50 p.m.
+Data for business investigations; Frisco/Burlington; 4 p.m. - 4:50 p.m.
+Using data journalism to investigate the news; New York Central; 9 a.m. - 9:50 a.m.
+Intro to SQLite; Jeffersonian/Knickerbocker; 9 a.m. - 9:50 a.m.
+Year in CAR; Frisco/Burlington; 9 a.m. - 9:50 a.m.
+Fundamentals of programming in Python; Grand Hall III; 9 a.m. - 10:50 a.m.
+Best visualization practices; Illinois Central; 9 a.m. - 9:50 a.m.
+Intro to SPSS; Grand Hall II; 9 a.m. - 9:50 a.m.
+Excel 1; Wabash Cannonball; 9 a.m. - 9:50 p.m.
+PowerPivot and NodeXL: This is not your father&#39;s Excel; Missouri Pacific; 9 a.m. - 9:50 a.m.
+Intro to Google Fusion Tables; Grand Hall I; 9 a.m. - 9:50 a.m.
+Advanced Google Fusion Tables; Grand Hall I; 10 a.m. - 10:50 a.m.
+How to edit a story made of software; New York Central; 10 a.m. - 10:50 a.m.
+Excel 2; Wabash Cannonball; 10 a.m. - 10:50 p.m.
+Mining data around the globe; Frisco/Burlington; 10 a.m. - 10:50 a.m.
+Free tools for data visualization and analysis; Illinois Central; 10 a.m. - 10:50 a.m.
+SPSS: Basic linear regression; Grand Hall II; 10 a.m. - 10:50 a.m.
+Making friends with map projections; Missouri Pacific; 10 a.m. - 10:50 a.m.
+Intro to Simile Exhibit; Jeffersonian/Knickerbocker; 10 a.m. - 10:50 a.m.
+Network analysis with NodeXL; Grand Hall I; 11 a.m. - 11:50 a.m.
+Web scraping with Google docs; Missouri Pacific; 11 a.m. - 11:50 a.m.
+Excel 3; Wabash Cannonball; 11 a.m. - 11:50 a.m.
+Latest trends in open records battles; Illinois Central; 11 a.m. - 11:50 a.m.
+What you need (and don&#39;t need) to do an election night map; New York Central; 11 a.m. - 11:50 a.m.
+OK, but where did that data come from? Data validation in the digital age; Frisco/Burlington; 11 a.m. - 11:50 a.m.
+SPSS: Using logistic regression; Grand Hall II; 11 a.m. - 11:50 a.m.
+Intro to MySQL; Grand Hall III; 11 a.m. - 11:50 a.m.
+Media Lawyers Brown Bag; New York Central; noon - 1:50 p.m.
+What to do when there is no data; New York Central; 2 p.m. - 2:50 p.m.
+Crime analyses for any newsroom; Frisco/Burlington; 2 p.m. - 2:50 p.m.
+Collaborating with data: Challenges and payoffs; Illinois Central; 2 p.m. - 2:50 p.m.
+Access 1; Wabash Cannonball; 2 p.m. - 2:50 p.m.
+Mini-Boot Camp; Grand Hall I&amp;II *pre-registration only; 2 p.m. - 4:50 p.m.
+Build your first News App with Django; Grand Hall III *pre-registered attendees; 2 p.m. - 5 p.m.
+Google Refine; Jeffersonian/Knickerbocker; 2 p.m. - 2:50 p.m.
+PANDA Project show &amp; tell; Missouri Pacific; 2 p.m. - 2:50 p.m.
+Advanced functions in Excel; Jeffersonian/Knickerbocker; 3 p.m. - 3:50 p.m.
+Failing government monopolies and looming alternatives; Frisco/Burlington; 3 p.m. - 3:50 p.m.
+Reporters&#39; Lab; Missouri Pacific; 3 p.m. - 3:50 p.m.
+Capturing and analyzing Twitter feeds; New York Central; 3 p.m. - 3:50 p.m.
+Access 2; Wabash Cannonball; 3 p.m. - 3:50 p.m.
+Making sure you tell a story; Illinois Central; 3 p.m. - 3:50 p.m.
+GeoCommons; Jeffersonian/Knickerbocker; 4 p.m. - 4:50 p.m.
+Mining federal contract data with the Federal Procurement Data System; Missouri Pacific; 4 p.m. - 4:50 p.m.
+Lightning Talks; Illinois Central; 4 p.m. - 4:50 p.m.
+Access 3; Wabash Cannonball; 4 p.m. - 4:50 p.m.
+The Web as an investigative tool; New York Central; 4 p.m. - 4:50 p.m.
+Editing the CAR story; Frisco/Burlington; 4 p.m. - 4:50 p.m.
+RegEx to the rescue; Grand Hall I; 9 a.m. - 9:50 a.m.
+Open gov - New data available from the transparency movement; Illinois Central; 9 a.m. - 9:50 a.m.
+Own your own map stack: Open source maps from the ground up; New York Central; 9 a.m. - 9:50 a.m.
+Tracking social media and turning it into investigations; Frisco/Burlington; 9 a.m. - 9:50 a.m.
+Getting started with GitHub; Missouri Pacific; 9 a.m. - 9:50 a.m.
+Intro to QGIS; Grand Hall II; 9 a.m. - 9:50 a.m.
+Knight-Mozilla OpenNews Q&amp;A; Grand Hall II; 9 a.m. - 9:50 a.m.
+Web scraping without programming; Wabash Cannonball; 9 a.m. - 9:50 a.m.
+Intro to SQL with Access (part 1); Jeffersonian/Knickerbocker; 9 a.m. - 9:50 a.m.
+Unsession: What we should be teaching the next generation; Illinois Central; 10 a.m. - 10:50 a.m.
+Intro to SQL with Access (part 2); Jeffersonian/Knickerbocker; 10 a.m. - 10:50 a.m.
+Intro to QGIS 2; Grand Hall II; 10 a.m. - 10:50 a.m.
+The ins and outs of internal APIs; New York Central; 10 a.m. - 10:50 a.m.
+Navigating the storm: Using data to bolster the traditional weather story; Missouri Pacific; 10 a.m. - 10:50 a.m.
+Getting data into Excel: From PDF to HTML; Wabash Cannonball; 10 a.m. - 10:50 a.m.
+Federal stats for local stories; Frisco/Burlington; 10 a.m. - 10:50 p.m.
+American FactFinder 2; Grand Hall I; 10 a.m. - 10:50 a.m.
+Intro to R; Grand Hall I; 10 a.m. - 10:50 a.m.
+TileMill; Grand Hall III; 11 a.m. - 11:50 a.m.
+Lockdown - Make sure your information is secure; Illinois Central; 11 a.m. - 11:50 a.m.
+Web scraping; Grand Hall II; 11 a.m. - 11:50 a.m.
+CAR wash 1: How dirty is it?; Jeffersonian/Knickerbocker; 11 a.m. - 11:50 a.m.
+Rapid fire future: Quick talks on what&#39;s on the horizon; New York Central; 11 a.m. - 11:50 a.m.
+Census.ire.org; Grand Hall I; 11 a.m. - 11:50 a.m.
+PowerPivot; Wabash Cannonball; 11 a.m. - 11:50 a.m.
+Dealing with real-time data; Missouri Pacific; 11 a.m. - 11:50 a.m.
+Government CAR for any newsroom; Frisco/Burlington; 11 a.m. - 11:50 a.m.
+Mini-Boot Camp part 2; Grand Hall I&amp;II *pre-registration only; 2 p.m. - 4:50 p.m.
+Integrating CAR into a daily beat; Frisco/Burlington; 2 p.m. - 2:50 p.m.
+Displaying data geographically with ArcView; Wabash Cannonball; 2 p.m. - 2:50 p.m.
+Creative uses of web scraping; New York Central; 2 p.m. - 2:50 p.m.
+Map graphics for video; Missouri Pacific; 2 p.m. - 2:50 p.m.
+What we can find out about elections; Illinois Central; 2 p.m. - 2:50 p.m.
+CAR wash 2: Cleaning; Jeffersonian/Knickerbocker; 2 p.m. - 2:50 p.m.
+Predicting the news: Tell your readers what will happen, before it happens; Illinois Central; 3 p.m. - 3:50 p.m.
+Web Inspector; Jeffersonian/Knickerbocker; 3 p.m. - 3:50 p.m.
+Automation and free text; New York Central; 3 p.m. - 3:50 p.m.
+Hidden databases: Mining the private parts of public officials; Frisco/Burlington; 3 p.m. - 3:50 p.m.
+Hacking the Census; Missouri Pacific; 3 p.m. - 4:50 p.m.
+Importing and selecting data by attribute with ArcView; Wabash Cannonball; 3 p.m. - 3:50 p.m.
+PANDA Project provisioning party; Jeffersonian/Knickerbocker; 4 p.m. - 4:50 p.m.
+Environmental analyses for any newsroom; Frisco/Burlington; 4 p.m. - 4:50 p.m.
+Getting to yes: Battling data pricetag inflation and other roadblocks; Illinois Central; 4 p.m. - 4:50 p.m.
+When data visualization does the heavy lifting; New York Central; 4 p.m. - 4:50 p.m.
+Geocoding to merge databases with addresses into maps with ArcView; Wabash Cannonball; 4 p.m. - 4:50 p.m.
+Mining the web for data and stories; New York Central; 9 a.m. - 9:50 a.m.
+Data U: The databases you need to cover higher ed; Illinois Central; 9 a.m. - 9:50 a.m.
+Mini-Boot Camp part 3; Grand Hall I&amp;II *pre-registration only; 9 a.m. - 10:50 a.m.
+Webscraping/data munging hackathon with Python; Grand Hall III; 9 a.m. - 10:50 a.m.
+A day in the life of a News App: An intro to Internet infrastructure; Illinois Central; 10 a.m. - 10:50 a.m.
+Storyboarding your ideas; New York Central; 10 a.m. - 10:50 a.m.
