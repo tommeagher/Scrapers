@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 from mechanize import Browser
 from BeautifulSoup import BeautifulSoup
-#import codecs
-#import sys
-
-#streamWriter = codecs.lookup('utf-8')[-1]
-#sys.stdout = streamWriter(sys.stdout)
 
 outfile = open("nicarscraped.txt", "w")
 
@@ -25,8 +20,7 @@ for row in soup.findAll('h3', {"class" : "title3"}):
     place = row.findNext('div', {"class" : "col-15 meta"}).p.string
     time = place.findNext('p').string
     record = (name, speaker2, place, time)
-#    print record
-#    print >> outfile, "; ".join(record)
-    print "; ".join(record)
+    print >> outfile, "; ".join(record)
+#    print "; ".join(record)
 
 outfile.close()
