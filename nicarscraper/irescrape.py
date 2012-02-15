@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 from mechanize import Browser
 from BeautifulSoup import BeautifulSoup
+from csvkit.unicsv import UnicodeCSVWriter
 
-outfile = open("nicarscraped.txt", "w")
+outfile = open("nicarscraped.csv", "w")
+w = UnicodeCSVWriter(outfile,delimiter=";",encoding="Cp1252")
+w.writerow(['title','speaker','place','time'])
 
 mech = Browser()
 url = "http://ire.org/conferences/nicar-2012/schedule/"
@@ -20,7 +23,6 @@ for row in soup.findAll('h3', {"class" : "title3"}):
     place = row.findNext('div', {"class" : "col-15 meta"}).p.string
     time = place.findNext('p').string
     record = (name, speaker2, place, time)
-    print >> outfile, "; ".join(record)
-#    print "; ".join(record)
-
+    w.writerow(record)
+    
 outfile.close()
