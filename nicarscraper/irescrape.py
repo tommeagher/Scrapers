@@ -17,12 +17,14 @@ soup = BeautifulSoup(html)
 for row in soup.findAll('h3', {"class" : "title3"}):
     name = row.find('a').string
     speaker = name.findNext('p')
+    desc = speaker.findNext('p').nextSibling.string
     subtree = speaker.strong
     subtree.extract()
     speaker2 = speaker.string
+    speaker2 = speaker2.strip()
     place = row.findNext('div', {"class" : "col-15 meta"}).p.string
     time = place.findNext('p').string
-    record = (name, speaker2, place, time)
+    record = (name, speaker2, place, time, desc)
     w.writerow(record)
     
 outfile.close()
