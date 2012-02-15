@@ -5,7 +5,7 @@ from csvkit.unicsv import UnicodeCSVWriter
 
 outfile = open("nicarscraped.csv", "w")
 w = UnicodeCSVWriter(outfile,delimiter=";",encoding="Cp1252")
-w.writerow(['title','speaker','place','time'])
+w.writerow(['Title','Speaker','Place','Time', 'Description'])
 
 mech = Browser()
 url = "http://ire.org/conferences/nicar-2012/schedule/"
