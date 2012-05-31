@@ -4,13 +4,13 @@ from BeautifulSoup import BeautifulSoup
 from csvkit.unicsv import UnicodeCSVWriter
 
 # This creates the csv file using the csvkit module and writes to it, creating the header rows
-outfile = open("ire12scraped.csv", "w")
+outfile = open("nicarscraped.csv", "w")
 w = UnicodeCSVWriter(outfile,delimiter=";",encoding="Cp1252")
 w.writerow(['Title','Speaker','Place','Day','Time','Description'])
 
 #Open a browser and fetch the http response from the url
 mech = Browser()
-url = "http://ire.org/events-and-training/event/20/"
+url = "http://ire.org/conferences/nicar-2012/schedule/"
 page = mech.open(url)
 
 #read the url and parse it using Beautiful soup
@@ -29,9 +29,9 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
         speaker = name.findNext('p')
         desc = speaker.findNext('p').nextSibling.string
         subtree = speaker.strong
-        #subtree.extract()
+        subtree.extract()
         speaker2 = speaker.string
-        #speaker2 = speaker2.strip()
+        speaker2 = speaker2.strip()
         place = row.findNext('div', {"class" : "col-15 meta"}).p.string
         time = place.findNext('p').string
         dayofweek = days[day]
