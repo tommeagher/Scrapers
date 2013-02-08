@@ -2,6 +2,7 @@
 from mechanize import Browser
 from BeautifulSoup import BeautifulSoup
 from csvkit.unicsv import UnicodeCSVWriter
+import re
 
 # This creates the csv file using the csvkit module and writes to it, creating the header rows
 outfile = open("nicar13sched.csv", "w")
@@ -27,11 +28,17 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
     for row in row.findAll('h3', {"class" : "title3"}):
         name = row.find('a').string
         speaker = name.findNext('p')
-        desc = speaker.findNext('p').nextSibling.string
+        descall = speaker.findNext('p')
+        desc = descall.findNext('p').contents[0].string
         subtree = speaker.strong
-        subtree.extract()
-        speaker2 = speaker.string
-        speaker2 = speaker2.strip()
+        if subtree == None:
+            speaker2 = None
+        else: 
+#            print subtree
+            subtree.extract()
+            speaker2 = speaker.string
+            speaker2 = speaker2.strip()
+#        print speaker2
         place = row.findNext('div', {"class" : "col-15 meta"}).p.string
         time = place.findNext('p').string
         dayofweek = days[day]
