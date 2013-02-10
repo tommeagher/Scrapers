@@ -1,0 +1,153 @@
+#req = beautifulsoup
+#urllib2
+#python-twitter
+#python-mysql
+#mysqldb http://sourceforge.net/projects/mysql-python/files/latest/download
+
+
+import twitter, mysqldb
+from local_settings import *
+#import the twitter module and the twitter api keys
+
+First, query my db and find the last ID in there
+
+
+api = twitter.Api(consumer_key=MY_CONSUMER_KEY,
+                      consumer_secret=MY_CONSUMER_SECRET,
+                      access_token_key=MY_ACCESS_TOKEN_KEY,
+                      access_token_secret=MY_ACCESS_TOKEN_SECRET)
+#connect and authenticate with the api
+                      
+print api.VerifyCredentials()
+
+#add lines here to query the database. If it's empty, use "None" for since_id
+#if the db has items in it, grab the last one and its id and use that for since_id
+
+json = api.GetSearch(term="#NICAR13", per_page=100, since_id=None, result_type="recent")
+
+if len of json is >99, then try page 2 query and add that.
+
+take the items in the json array, process, parse out urls, grab titles
+
+import urllib2
+from BeautifulSoup import BeautifulSoup
+
+def get_title(url):
+    response=urllib2.urlopen(url)
+    html=response.read()
+    soup=BeautifulSoup(html)
+    title=soup.title.text
+    return title
+
+and push all info for each tweet and insert into db
+
+
+
+
+GetSearch(self,
+                term=None,
+                geocode=None,
+                since_id=None,
+                max_id=None,
+                until=None,
+                per_page=15,
+                page=1,
+                lang=None,
+                show_user="true",
+                result_type="mixed",
+                include_entities=None,
+                query_users=False):
+                
+                GetSearch(term="#NICAR13", per_page=100)
+                
+                
+
+
+                >>> import twitter
+api = twitter.Api()
+To create an instance of the twitter.Api with login credentials (many API calls required the client to be authenticated.)
+
+The python-twitter library now only supports oAuth authentication as the Twitter devs have indicated that OAuth is the only method that will be supported moving forward.
+
+
+
+ json = api.GetSearch(term="#NICAR13", per_page=100, since_id="298934854345711616")
+ 
+ results[0].text
+
+len(results)
+
+   self.created_at = created_at
+    self.favorited = favorited
+    self.id = id
+    self.text = text
+    self.location = location
+    self.user = user
+    self.now = now
+    self.in_reply_to_screen_name = in_reply_to_screen_name
+    self.in_reply_to_user_id = in_reply_to_user_id
+    self.in_reply_to_status_id = in_reply_to_status_id
+    self.truncated = truncated
+    self.retweeted = retweeted
+    self.source = source
+    self.urls = urls
+    self.user_mentions = user_mentions
+    self.hashtags = hashtags
+    self.media = media
+    self.geo = geo
+    self.place = place
+    self.coordinates = coordinates
+    self.contributors = contributors
+    self.retweeted_status = retweeted_status
+    self.retweet_count = retweet_count
+    
+    
+    
+trouble shoot mysql    
+    Set up databases to run AS YOUR USER ACCOUNT with:
+    unset TMPDIR
+    mysql_install_db --verbose --user='mysql' --basedir="$(brew --prefix mysql)" --datadir=/usr/local/var/mysql --tmpdir=/tmp
+
+To set up base tables in another folder, or use a different user to run
+mysqld, view the help for mysqld_install_db:
+    mysql_install_db --help
+
+and view the MySQL documentation:
+  * http://dev.mysql.com/doc/refman/5.5/en/mysql-install-db.html
+  * http://dev.mysql.com/doc/refman/5.5/en/default-privileges.html
+
+To run as, for instance, user "mysql", you may need to `sudo`:
+    sudo mysql_install_db ...options...
+
+Start mysqld manually with:
+    mysql.server start
+
+    Note: if this fails, you probably forgot to run the first two steps up above
+
+A "/etc/my.cnf" from another install may interfere with a Homebrew-built
+server starting up correctly.
+
+To connect:
+    mysql -uroot
+
+To launch on startup:
+* if this is your first install:
+    mkdir -p ~/Library/LaunchAgents
+    cp /usr/local/Cellar/mysql/5.5.15/com.mysql.mysqld.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist
+
+* if this is an upgrade and you already have the com.mysql.mysqld.plist loaded:
+    launchctl unload -w ~/Library/LaunchAgents/com.mysql.mysqld.plist
+    cp /usr/local/Cellar/mysql/5.5.15/com.mysql.mysqld.plist ~/Library/LaunchAgents/
+    launchctl load -w ~/Library/LaunchAgents/com.mysql.mysqld.plist
+
+You may also need to edit the plist to use the correct "UserName".
+
+Warning: m4 macros were installed to "share/aclocal".
+Homebrew does not append "/usr/local/share/aclocal"
+to "/usr/share/aclocal/dirlist". If an autoconf script you use
+requires these m4 macros, you'll need to add this path manually.
+==> Summary
+
+
+http://icesquare.com/wordpress/mysql-starting-mysql-error-the-server-quit-without-updating-pid-file/
