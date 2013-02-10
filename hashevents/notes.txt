@@ -1,8 +1,7 @@
 #req = beautifulsoup
 #urllib2
 #python-twitter
-#python-mysql
-#mysqldb http://sourceforge.net/projects/mysql-python/files/latest/download
+#MySQL-python
 
 
 import twitter, mysqldb
