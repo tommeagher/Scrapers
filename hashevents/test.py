@@ -26,7 +26,11 @@ cur.execute("create table ultracasual_redi.test (id int NOT NULL AUTO_INCREMENT 
  
 results = api.GetSearch(term="#NICAR13", per_page=100, since_id=None, result_type="recent")
 len(results)
-results[0].txt
+#loop this
+text = results[0].txt
+earls = re.findall(r'(https?://\S+)', text)
+len(earls)
+
 #if len of json is >99, then try page 2 query and add that.
  
 #take the items in the json array, process, parse out urls, grab titles
