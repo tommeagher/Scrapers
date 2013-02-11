@@ -4,12 +4,11 @@
 #MySQL-python
 
 
-import twitter, mysqldb
+import twitter, MySQLdb, urllib2
 from local_settings import *
 #import the twitter module and the twitter api keys
 
 First, query my db and find the last ID in there
-
 
 api = twitter.Api(consumer_key=MY_CONSUMER_KEY,
                       consumer_secret=MY_CONSUMER_SECRET,
@@ -18,6 +17,9 @@ api = twitter.Api(consumer_key=MY_CONSUMER_KEY,
 #connect and authenticate with the api
                       
 print api.VerifyCredentials()
+
+db = MySQLdb.connect(host=MYSQL_HOST, user=MYSQL_USER, passwd=MYSQL_PASS, db=MYSQL_DB)
+cur.execute("create table ultracasual_redi.test (id int NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(45))") 
 
 #add lines here to query the database. If it's empty, use "None" for since_id
 #if the db has items in it, grab the last one and its id and use that for since_id
@@ -36,10 +38,12 @@ def get_title(url):
     html=response.read()
     soup=BeautifulSoup(html)
     title=soup.title.text
-    return title
+    realurl=response.geturl()
+    return title, realurl
+
+title, realurl = get_title(url)
 
 and push all info for each tweet and insert into db
-
 
 
 
