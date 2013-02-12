@@ -4,4 +4,9 @@ MY_CONSUMER_SECRET = ''
 MY_ACCESS_TOKEN_KEY = ''
 MY_ACCESS_TOKEN_SECRET = ''
 
-DATABASE = 'hashevents.db'
+MYSQL_HOST=""
+MYSQL_DB=""
+MYSQL_USER=""
+MYSQL_PASS=""
+
+#DATABASE = 'hashevents.db'
