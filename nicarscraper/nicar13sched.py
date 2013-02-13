@@ -34,13 +34,17 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
         if subtree == None:
             speaker2 = None
         else: 
-#            print subtree
             subtree.extract()
             speaker2 = speaker.string
             speaker2 = speaker2.strip()
-#        print speaker2
         place = row.findNext('div', {"class" : "col-15 meta"}).p.string
         time = place.findNext('p').string
+        if name == "Demo: Sneak peek of Caspio Bridge 8.0 Beta  (Hosted by Caspio)":
+            desc = desc.findNext('p').contents[0].string
+        if time == desc:
+            desc = None
+        else: 
+            desc = desc
         dayofweek = days[day]
         record = (name, speaker2, place, dayofweek, time, desc)
 #write the record for the single class to the csv
