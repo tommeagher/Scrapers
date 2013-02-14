@@ -20,14 +20,14 @@ tablename=HASHTAG[1:]
 
 try:
     cur.execute('select * from %s.%s;' % (MYSQL_DB, tablename))
-else:
+except:
     cur.execute('create table %s (id integer primary key auto_increment, created_at datetime not null, twitid integer not null, source text null, twittext text not null, user_id integer not null, user_screen_name text not null, user_name text not null, user_location text null, user_url text null, user_description text null, retweeted text null, retweet_count text null);' % tablename)
 
 #query the database. If it's empty, use "None" for since_id
 #if the db has items in it, grab the last one and its id and use that for since_id
 try:
     sinceid = cur.execute('select max(twitid) from hashevents.NICAR13;')
-else:
+except:
     sinceid=None    
 
 ##START HERE
