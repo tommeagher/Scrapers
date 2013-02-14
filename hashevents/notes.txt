@@ -158,3 +158,50 @@ requires these m4 macros, you'll need to add this path manually.
 
 
 http://icesquare.com/wordpress/mysql-starting-mysql-error-the-server-quit-without-updating-pid-file/
+
+
+
+create table NICAR13 (
+  id integer primary key autoincrement,
+  created_at datetime not null,
+  twitid string not null,
+  source text null,
+  twittext text not null,
+  user_screen_name text not null,
+  user_name text not null,
+  user_location text null,
+  user_url text null,
+  user_description text null,
+  retweeted text null,
+  retweet_count text null
+);
+
+
+ user.id
+    user.name
+    user.screen_name
+    user.location
+    user.description
+    user.profile_image_url
+    user.profile_background_tile
+    user.profile_background_image_url
+    user.profile_sidebar_fill_color
+    user.profile_background_color
+    user.profile_link_color
+    user.profile_text_color
+    user.protected
+    user.utc_offset
+    user.time_zone
+    user.url
+    user.status
+    user.statuses_count
+    user.followers_count
+    user.friends_count
+    user.favourites_count
+    user.geo_enabled
+    user.verified
+    user.lang
+    user.notifications
+    user.contributors_enabled
+    user.created_at
+    user.listed_count
