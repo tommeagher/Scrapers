@@ -1,2 +1,0 @@
-#config
-HASHTAG = "#NICAR13"
