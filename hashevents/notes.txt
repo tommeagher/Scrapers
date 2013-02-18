@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #req = beautifulsoup
 #urllib2
 #python-twitter
@@ -52,6 +53,8 @@ title, realurl = get_title(url)
 
 and push all info for each tweet and insert into db
 
+=======
+>>>>>>> 4df52d30b28abe69396cd67c4d72ed48eee13106
 
 
 GetSearch(self,
@@ -161,3 +164,34 @@ requires these m4 macros, you'll need to add this path manually.
 
 
 http://icesquare.com/wordpress/mysql-starting-mysql-error-the-server-quit-without-updating-pid-file/
+
+
+
+ user.id
+    user.name
+    user.screen_name
+    user.location
+    user.description
+    user.profile_image_url
+    user.profile_background_tile
+    user.profile_background_image_url
+    user.profile_sidebar_fill_color
+    user.profile_background_color
+    user.profile_link_color
+    user.profile_text_color
+    user.protected
+    user.utc_offset
+    user.time_zone
+    user.url
+    user.status
+    user.statuses_count
+    user.followers_count
+    user.friends_count
+    user.favourites_count
+    user.geo_enabled
+    user.verified
+    user.lang
+    user.notifications
+    user.contributors_enabled
+    user.created_at
+    user.listed_count
