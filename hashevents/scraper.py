@@ -46,13 +46,11 @@ if sinceid[0]==None:
 else:
     sinceid=sinceid[0]
 
-##START HERE
 #start at pagenum=1, if the len of results is 100, then try it with pagenum=2. Try a while? 
 pagenum=1 
  
 results = api.GetSearch(term=HASHTAG, per_page=100, since_id=sinceid, page=pagenum, result_type="recent")
 length = len(results)
-#print length
 
 while length>99:
     pagenum=pagenum+1
@@ -60,26 +58,24 @@ while length>99:
     results=results+newres
     length=len(newres)
 
-newresultslen = len(results)
-#print newresultslen    
+#newresultslen = len(results)
 
 for result in results:
-    created_at=result.created_at
-    twitid=result.id
-    source=result.source
-    twittext=result.text
-    user_screen_name=result.user.screen_name
+    created_at=str(result.created_at)
+    twitid=str(result.id)
+    source=str(result.source)
+    twittext=result.text.encode("utf8")
+    user_screen_name=str(result.user.screen_name)
     result_user=api.GetUser(user_screen_name)
-    user_id=result_user.id
-    user_name=result_user.name
-    user_location=result_user.location
-    user_url=result_user.url
-    user_description=result_user.description
-    retweeted=result.retweeted
-    retweet_count=result.retweet_count
+    user_id=str(result_user.id)
+    user_name=result_user.name.encode("utf8")
+    user_location=result_user.location.encode("utf8")
+    user_url=str(result_user.url)
+    user_description=result_user.description.encode("utf8")
+    retweeted=str(result.retweeted)
+    retweet_count=str(result.retweet_count)
     earls = re.findall(r'(https?://\S+)', twittext)
     earls_len=len(earls)
-#    print earls_len
     if earls_len>0:
         try:
             if earls_len==1:
@@ -110,12 +106,9 @@ for result in results:
         tweeturl3, tweeturltitle3 = None, None
         tweeturl4, tweeturltitle4 = None, None
                 
-    tuple = (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count)        
-    print tuple
-#START HERE. The insert statement isn't working. That's it.    
-#    cur.execute("""INSERT INTO %s.%s VALUES (%s,%s)""",(MYSQL_DB, tablename, created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count))
-#    db.commit()    
+    treble = (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count)
 
-#cur.execute("select * from hashtevents.NICAR13")
-#rows = cur.fetchall()
-#print rows
+    cur.execute('INSERT INTO `NICAR13` (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count) VALUES (%s, %s, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s, %s)' , treble)
+    db.commit()
+    
+print "Done"

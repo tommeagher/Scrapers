@@ -26,9 +26,9 @@ db = MySQLdb.connect(host=MYSQL_HOST, user=MYSQL_USER, passwd=MYSQL_PASS, db=MYS
 cur = db.cursor()
 
 if HASHTAG[0]=="#":
-    tablename=HASHTAG[1:]
+    tablename=str(HASHTAG[1:])
 else: 
-    tablename=HASHTAG
+    tablename=str(HASHTAG)
 
 try:
     cur.execute('select * from %s.%s;' % (MYSQL_DB, tablename))
@@ -41,6 +41,7 @@ db.commit()
 #How to translate the 1L
 cur.execute('select max(twitid) from %s.%s;' % (MYSQL_DB, tablename))
 sinceid=cur.fetchone()
+print sinceid
 if sinceid[0]==None:
     sinceid=None
 else:
@@ -51,8 +52,9 @@ else:
 pagenum=1 
  
 results = api.GetSearch(term=HASHTAG, per_page=100, since_id=sinceid, page=pagenum, result_type="recent")
-
-result=results[41]
+newresults = api.GetSearch(term=HASHTAG, per_page=100, since_id=sinceid, page=pagenum, result_type="recent")
+print len(newresults)
+result=newresults[38]
 
 #while length>99:
 #    pagenum=pagenum+1
@@ -60,19 +62,19 @@ result=results[41]
 #    results=results+newres
 #    length=len(newres)
 
-created_at=result.created_at
-twitid=result.id
-source=result.source
-twittext=result.text
-user_screen_name=result.user.screen_name
+created_at=str(result.created_at)
+twitid=str(result.id)
+source=str(result.source)
+twittext=result.text.encode("utf8")
+user_screen_name=str(result.user.screen_name)
 result_user=api.GetUser(user_screen_name)
-user_id=result_user.id
+user_id=str(result_user.id)
 user_name=result_user.name
-user_location=result_user.location
-user_url=result_user.url
-user_description=result_user.description
-retweeted=result.retweeted
-retweet_count=result.retweet_count
+user_location=str(result_user.location)
+user_url=str(result_user.url)
+user_description=str(result_user.description)
+retweeted=str(result.retweeted)
+retweet_count=str(result.retweet_count)
 earls = re.findall(r'(https?://\S+)', twittext)
 earls_len=len(earls)
 #if earls_len>0:
@@ -115,13 +117,14 @@ treble = (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweet
 print treble
 
 #not working, nor is simplified version below.            
-#cur.execute('INSERT INTO %s.%s (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)', MYSQL_DB, tablename, created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count)
-
+#cur.execute('INSERT INTO %s (twitid, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count) VALUES (%s, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)', (tablename, twitid, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count))
+turn = cur.execute('select * from `NICAR13` where twitid=%s', twitid)
+data = cur.fetchone()
+print data
 #cur.commit()
 #cur.execute("select * from hashtevents.NICAR13")
 #rows = cur.fetchall()
 #print rows
-    
 
-cur.execute('INSERT INTO %s (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count) VALUES (%s)' % (tablename, treble))
-
+cur.execute('INSERT INTO `NICAR13` (created_at, twitid, source, twittext, tweeturl1, tweeturltitle1, tweeturl2, tweeturltitle2, tweeturl3, tweeturltitle3, tweeturl4, tweeturltitle4, user_id, user_screen_name, user_name, user_location, user_url, user_description, retweeted, retweet_count) VALUES (%s, %s, %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s, %s)' , treble)
+db.commit()
