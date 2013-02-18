@@ -30,6 +30,9 @@ cur.execute("create table ultracasual_redi.test (id int NOT NULL AUTO_INCREMENT 
 
 json = api.GetSearch(term="#NICAR13", per_page=100, since_id=None, result_type="recent")
 
+user=api.GetUser("ericg")
+user.name
+
 if len of json is >99, then try page 2 query and add that.
 
 take the items in the json array, process, parse out urls, grab titles
