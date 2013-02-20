@@ -39,8 +39,8 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
             speaker2 = speaker2.strip()
         place = row.findNext('div', {"class" : "col-15 meta"}).p.string
         time = place.findNext('p').string
-        if name == "Demo: Sneak peek of Caspio Bridge 8.0 Beta  (Hosted by Caspio)":
-            desc = desc.findNext('p').contents[0].string
+#        if name == "Demo: Sneak peek of Caspio Bridge 8.0 Beta  (Hosted by Caspio)":
+#            desc = desc.findNext('p').contents[0].string
         if time == desc:
             desc = None
         else: 
