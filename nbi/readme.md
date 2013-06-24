@@ -1,0 +1,1 @@
+Scripts to grab and parse the record format table for the National Bridge Inventory data here: http://www.fhwa.dot.gov/bridge/nbi/ascii.cfm
