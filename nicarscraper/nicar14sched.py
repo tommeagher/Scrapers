@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-from mechanize import Browser
+import urllib2
 from datetime import date, timedelta
 from BeautifulSoup import BeautifulSoup
 from csvkit.unicsv import UnicodeCSVWriter
-import re
 
 # This creates the csv file using the csvkit module and writes to it, creating the header rows
 outfile = open("nicar14sched.csv", "w")
@@ -13,28 +12,27 @@ w.writerow(['Subject','Start Date','Start Time','End Date','End Time','All Day E
 private = False
 all_day = False
 
-#Open a browser and fetch the http response from the url
-mech = Browser()
-
-#update the URL when you reuse"
+#update the URL when you reuse the script next year
 url = "http://www.ire.org/conferences/nicar-2014/schedule/"
+
+#use urllib2 to send a request to the URL and gather the html response
+response = urllib2.urlopen(url)
+html = response.read()
+
+#read the html and parse it using Beautiful soup
+soup = BeautifulSoup(html)
 
 #update the date of the conference
 year = 2014
 month = 2
 adate = 26
 the_date=date(year,month,adate)
-page = mech.open(url)
-
-#read the url and parse it using Beautiful soup
-html = page.read()
-soup = BeautifulSoup(html)
+d = timedelta(days=1)
 
 #The first day of the conference is a Wednesday, or 2, since the list starts counting at 0. 
 day = 2
 days =[ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
        'Sunday' ]
-d = timedelta(days=1)
 
 #find the "ul class 'listview pane'" which wraps around each day's schedule and parse the items in it.
 for row in soup.findAll('ul', {"class" : "listview pane"}):
