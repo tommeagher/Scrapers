@@ -74,9 +74,6 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
         else: 
             end_time = end_time
 
-#        if name == "Demo: Sneak peek of Caspio Bridge 8.0 Beta  (Hosted by Caspio)":
-#            desc = desc.findNext('p').contents[0].string
-
         dayofweek = str(the_date)
         if desc != None and speaker2 != "Speakers: TBA":
             desc = speaker2 + " - " + desc
