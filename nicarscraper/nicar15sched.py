@@ -5,7 +5,7 @@ from BeautifulSoup import BeautifulSoup
 from csvkit.unicsv import UnicodeCSVWriter
 
 # This creates the csv file using the csvkit module and writes to it, creating the header rows
-outfile = open("nicar14sched.csv", "w")
+outfile = open("nicar15sched.csv", "w")
 w = UnicodeCSVWriter(outfile,delimiter=",",encoding="Cp1252")
 w.writerow(['Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private'])
 
@@ -13,7 +13,7 @@ private = False
 all_day = False
 
 #update the URL when you reuse the script next year
-url = "http://www.ire.org/conferences/nicar-2014/schedule/"
+url = "http://ire.org/events-and-training/event/1494/"
 
 #use urllib2 to send a request to the URL and gather the html response
 response = urllib2.urlopen(url)
@@ -23,9 +23,9 @@ html = response.read()
 soup = BeautifulSoup(html)
 
 #update the date of the conference
-year = 2014
-month = 2
-adate = 26
+year = 2015
+month = 3
+adate = 4
 the_date=date(year,month,adate)
 d = timedelta(days=1)
 
@@ -52,7 +52,10 @@ for row in soup.findAll('ul', {"class" : "listview pane"}):
             subtree.extract()
             speaker2 = speaker.string
             speaker2 = speaker2.strip()
-        speaker2 = "Speakers: " + speaker2
+        try:
+        	speaker2 = "Speakers: " + speaker2
+        except:
+        	speaker2 = "Speakers TBA"
         place = row.findNext('div', {"class" : "col-15 meta"}).p.string
         time = place.findNext('p').string
         if time == desc:

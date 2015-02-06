@@ -1,0 +1,99 @@
+Subject,Start Date,Start Time,End Date,End Time,All Day Event,Description,Location,Private
+Techraking &lt;=10: Bootstrapping the News (Sponsored by The Center for Investigative Reporting),2015-03-04,1:00:00 p.m.,2015-03-04,5:00:00 p.m.,False,"Speakers TBA - Give us four hours and your laptop, and we&rsquo;ll send you into NICAR with a fully-functioning data-crunching machine and the knowledge to use it.",International 10,False
+Secrets of Covering Money (Sponsored by the Donald W. Reynolds National Center for Business Journalism),2015-03-04,2:00:00 p.m.,2015-03-04,5:00:00 p.m.,False,"Speakers: Brandon Quester - Money is in every story, from education to politics to metro, sports and entertainment. Learn how to explore the money across many beats in this pre-conference Reynolds Center workshop led by Brandon Quester.&nbsp;",International 8-9,False
+Intermediate Python,2015-03-05,9:00:00 a.m.,2015-03-05,5:30 p.m.,False,"Speakers: Jeremy Bowers, Serdar Tumgoren - You've written a few Python scripts that get the job done, but the initial euphoria has worn off. Your code is hard to understand. Bugs are cropping up. Worse, you can't always explain your process or results to an editor -- or yourself. There must be a better way, but the path forward is not clear. If you've had that itchy feeling, this daylong, hands-on workshop is for you.",M102,False
+Map Camp (pre-registered attendees only),2015-03-05,9:00:00 a.m.,2015-03-05,5:30 p.m.,False,"Speakers: David Herzog, Jennifer LaFleur, Robby Deming, Brian Peterson - Learn how to uncover interesting news stories by mapping data with geographic information system (GIS) software during our intensive mini-boot camp and receive a free copy of ArcGIS Desktop*.",M109,False
+Excel magic (advanced functions),2015-03-05,9:00:00 a.m.,2015-03-05,10:00:00 a.m.,False,Speakers: MaryJo Webster,M105,False
+Interactive data graphics in Tableau Public (Hosted by Tableau),2015-03-05,9:00:00 a.m.,2015-03-05,10:30 a.m.,False,"Speakers: Ben Jones - Learn how to create beautiful, interactive data visualizations on short deadlines. No programming required. You'll learn everything you need to build data visualizations and publish them to your website just like a video.&nbsp;",M101,False
+PyCAR,2015-03-05,9:00:00 a.m.,2015-03-05,5:30 p.m.,False,"Speakers TBA - Introduction to Python. This hands-on workshop will teach journalists basic programming concepts using the Python language. The daylong class will introduce language basics and useful libraries in the course of a typical reporting project: scraping data from the Web, inserting it in a database and analyzing the results.",See printed schedule for room information,False
+Make Photoshop work for you,2015-03-05,10:10 a.m.,2015-03-05,11:10 a.m.,False,Speakers: Christopher Canipe,M105,False
+Excel for business and economics,2015-03-05,10:10 a.m.,2015-03-05,11:10 a.m.,False,Speakers: Aaron Kessler,M103,False
+Advanced design and interaction in Tableau Public (Hosted by Tableau Public),2015-03-05,11:00:00 a.m.,2015-03-05,12:30 p.m.,False,"Speakers: Jewel Loree, - Analyzing data and coming up interactive visualizations is easy in Tableau but sometimes getting everything looking polished isn&rsquo;t. In this session you will learn how to break away from the default formatting in Tableau Public to create interactive data graphics that match your style guides and engage your readers.&nbsp;",M101,False
+Getting started with Access,2015-03-05,11:20 a.m.,2015-03-05,12:20 p.m.,False,Speakers: Pam Dempsey,M105,False
+OpenRefine,2015-03-05,11:20 a.m.,2015-03-05,12:20 p.m.,False,Speakers: Frederick Kaimann,M103,False
+Intro to data stories in Tableau Public (Hosted by Tableau Public),2015-03-05,1:30 p.m.,2015-03-05,3:00:00 p.m.,False,"Speakers: Andrew Cheung - Got a dataset and an impending deadline to write a story on it? Find the scoop and convey it with beautiful, interactive visualizations in a serial narrative using Tableau Public. It&rsquo;s a fast, easy to use, and free tool for journalists. Visualizations will publish using any CMS and no programming is required.&nbsp;",M101,False
+Stats: An introduction,2015-03-05,2:10 p.m.,2015-03-05,3:10 p.m.,False,Speakers: Jeff Kelly Lowenstein,M103,False
+Counting and summing with Access,2015-03-05,2:10 p.m.,2015-03-05,3:10 p.m.,False,Speakers: Andrea Fuller,M105,False
+Joining tables with Access,2015-03-05,3:20 p.m.,2015-03-05,4:20 p.m.,False,Speakers: Michael Pell,M105,False
+Import.io: Web scraping without coding,2015-03-05,3:20 p.m.,2015-03-05,4:20 p.m.,False,Speakers: Andrew Fogg,M107,False
+Stats: Basic linear regression,2015-03-05,3:20 p.m.,2015-03-05,4:20 p.m.,False,Speakers: Holly Hacker,M103,False
+Advanced calculations and analysis in Tableau Public (Hosted by Tableau Public),2015-03-05,3:30 p.m.,2015-03-05,5:00:00 p.m.,False,Speakers: Tara Walker - Learn how to use Tableau to dive deeper into your data and ask powerful questions. We&rsquo;ll be starting with a &ldquo;messy&rdquo; dataset and learn how to explore trends that would normally be difficult to see without further analysis and calculations.&nbsp;,M101,False
+"Building better maps with Leaflet, Mapbox and Javascript",2015-03-05,4:30 p.m.,2015-03-05,5:30 p.m.,False,Speakers: Ashlyn Still,M07,False
+Stats: Logistic regression,2015-03-05,4:30 p.m.,2015-03-05,5:30 p.m.,False,Speakers: David Donald,M103,False
+Make the command line work for you,2015-03-05,4:30 p.m.,2015-03-05,5:30 p.m.,False,Speakers: Liz Lucas,M105,False
+Github 101: The basics,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,"Speakers: Jessica Lord, Anna Wiener",M101,False
+Build your first news app *pre-registered attendees only,2015-03-06,9:00:00 a.m.,2015-03-06,12:20 p.m.,False,"Speakers: Ben Welsh, Derek Willis - This mini-boot camp will walk you through the process of building a simple, useful online news application from a dataset. You will get hands-on experience in every stage of the development process, writing Python, HTML and JavaScript using version control tools. You won't stop until you've deployed a working application onto the World Wide Web. Preregistration is required and seating is limited. Sessions will be held on Friday and Saturday morning. Laptops will be provided for the training.",M102,False
+Useful command line tools for reporters,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Matt Kiefer,M107,False
+Regular expressions for beginners,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Abraham Hyatt,M105,False
+Getting started in Excel,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Helena Bengtsson,M103,False
+Fusion Tables for beginners,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Kate Martin,M106,False
+Making timelines,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Lena Groeger,M104,False
+Amazon cloud basics,2015-03-06,9:00:00 a.m.,2015-03-06,10:00:00 a.m.,False,Speakers: Scott Klein,M109,False
+Using formulas in Excel,2015-03-06,10:10 a.m.,2015-03-06,11:10 a.m.,False,Speakers: John Schoen,M103,False
+First steps with R,2015-03-06,10:10 a.m.,2015-03-06,11:10 a.m.,False,Speakers: Annie Waldman,M106,False
+How I learned to take command of the command line: A journalist&#39;s guide to getting started,2015-03-06,10:10 a.m.,2015-03-06,11:10 a.m.,False,"Speakers: Chris Keller, AJ Vicens",M101,False
+Crowdsourcing with Google Forms,2015-03-06,10:10 a.m.,2015-03-06,11:10 a.m.,False,Speakers: Doug Haddix,M109,False
+Map like a pro with ArcGIS Online,2015-03-06,10:10 a.m.,2015-03-06,11:10 a.m.,False,"Speakers: Robby Deming, Brian Peterson",M104,False
+Simple stats in Excel,2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,Speakers: Olga Pierce,M105,False
+Introduction to web programming,2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,Speakers: Peggy Bustamante,M104,False
+PivotTables in Excel,2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,Speakers: Jonathan Stoneman,M103,False
+Web scraping using Python,2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,Speakers: Paul Schreiber,M101,False
+Github 101: The basics (repeat session),2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,"Speakers: Jessica Lord, Anna Wiener",M107,False
+Visualizing your data with R,2015-03-06,11:20 a.m.,2015-03-06,12:20 p.m.,False,Speakers: Ronald Campbell,M106,False
+Getting started with JavaScript,2015-03-06,2:10 p.m.,2015-03-06,3:10 p.m.,False,Speakers: Andy Boyle,M109,False
+Advanced Django for data analysis,2015-03-06,2:10 p.m.,2015-03-06,3:10 p.m.,False,"Speakers: Armand Emamdjomeh, Anthony Pesce",M101,False
+Teach yourself to code,2015-03-06,2:10 p.m.,2015-03-06,3:10 p.m.,False,Speakers: Becca Aaronson,M102,False
+Grabbing data from websites without scraping,2015-03-06,2:10 p.m.,2015-03-06,3:10 p.m.,False,"Speakers: Scott Klein, Michelle Minkoff",M109,False
+Mini Boot Camp *pre-registered attendees only,2015-03-06,2:10 p.m.,2015-03-06,4:20 p.m.,False,"Speakers: Megan Luther, Jaimi Dowdell - Kickstart your data skills with IRE's original mini-boot camp. &nbsp;This series of hands-on classes will introduce you to spreadsheets and databases with IRE's proven techniques. IRE's experienced trainers will walk you through sorting, calculating and interviewing data. &nbsp;You'll come away with a solid base for using data analysis in your own newsroom.",M103/M105,False
+Getting data into Excel,2015-03-06,2:10 p.m.,2015-03-06,3:10 p.m.,False,Speakers: Patti DiVincenzo,M106,False
+Analyzing networks with Gephi,2015-03-06,3:20 p.m.,2015-03-06,4:20 p.m.,False,Speakers: Peter Aldhous,M106,False
+Useful command line tools for reporters (repeat),2015-03-06,3:20 p.m.,2015-03-06,4:20 p.m.,False,"Speakers: Agustin Armendariz, Kendall Taggart",M101,False
+GitHub 201: Leveling up with the command line,2015-03-06,3:20 p.m.,2015-03-06,4:20 p.m.,False,"Speakers: Jessica Lord, Anna Wiener",M102,False
+Mapping JS: Building narrative with geo data + CartoDB,2015-03-06,3:20 p.m.,2015-03-06,4:20 p.m.,False,Speakers: Aurelia Moser,M109,False
+Playing with Arduino,2015-03-06,3:20 p.m.,2015-03-06,4:20 p.m.,False,Speakers: John Keefe,M107,False
+Build your first news app (Saturday) *pre-registered attendees only,2015-03-07,9:00:00 a.m.,2015-03-07,12:20 p.m.,False,"Speakers: Ben Welsh, Derek Willis - This is a continuation of Friday's hands-on workshop. &nbsp;Preregistered attendees only.",M102,False
+Create your own interactive newsgame without coding,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers TBA,M107,False
+More MySQL: Learn to use the command line and other powerful features,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: Agustin Armendariz,M105,False
+Excel magic (advanced functions) *repeat session,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: MaryJo Webster,M103,False
+Do more in R with these useful new packages,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: Sharon Machlis,M106,False
+Advanced Fusion Tables,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: Daniel Lathrop,M104,False
+Twitter tricks and analytics,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: Doug Haddix,M109,False
+Ruby 1: Introduction,2015-03-07,9:00:00 a.m.,2015-03-07,10:00:00 a.m.,False,Speakers: Al Shaw,See printed schedule for room information,False
+R: Preplication,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,Speakers: Bill Alpert,M106,False
+Municipal bonds 101,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,"Speakers: Joel Thurtell, Cezary Podkul",M107,False
+Advanced SQL for analysis,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,Speakers: Liz Lucas,M105,False
+Text editing with Regular Expressions,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,Speakers: Jon McClure,M103,False
+Tools for cracking PDFs,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,Speakers: Danielle Cervantes,M109,False
+Ruby 2: Acquiring and transforming data,2015-03-07,10:10 a.m.,2015-03-07,11:10 a.m.,False,Speakers: Jeff Larson,See printed schedule for room information,False
+Machine learning,2015-03-07,11:20 a.m.,2015-03-07,12:20 p.m.,False,Speakers: Chase Davis,M107,False
+OpenRefine (repeat session),2015-03-07,11:20 a.m.,2015-03-07,12:20 p.m.,False,Speakers: David Herzog,M103,False
+Import.io: Web scraping without coding (repeat session),2015-03-07,11:20 a.m.,2015-03-07,12:20 p.m.,False,Speakers: Andrew Fogg,M109,False
+Under pressure: Real life in real time with breaking news,2015-03-07,11:20 a.m.,2015-03-07,12:20 p.m.,False,Speakers: Stephen Stock,M106,False
+Ruby 3: Simple web apps with Ruby,2015-03-07,11:20 a.m.,2015-03-07,12:20 p.m.,False,Speakers: Jacob Harris,See printed schedule for room information,False
+Twitter Bootstrap: Responsive website framework,2015-03-07,2:10 p.m.,2015-03-07,3:10 p.m.,False,Speakers: Erika Lee,M107,False
+Automate your development life: Build and deploy with Yeoman and Grunt,2015-03-07,2:10 p.m.,2015-03-07,3:10 p.m.,False,Speakers: Ryan Murphy,M106,False
+Getting started with SQLite,2015-03-07,2:10 p.m.,2015-03-07,3:10 p.m.,False,Speakers: Troy Thibodeaux,M109,False
+Introduction to mapping: Importing and displaying data geographically with QGIS,2015-03-07,2:10 p.m.,2015-03-07,3:10 p.m.,False,Speakers: Peter Aldhous,M102,False
+Mini Boot Camp (Saturday) *pre-registered attendees only,2015-03-07,2:10 p.m.,2015-03-07,5:30 p.m.,False,"Speakers: Denise Malan, Liz Lucas - This is a continuation of Friday's hands-on workshop. &nbsp;Preregistered attendees only.",M103/M105,False
+Web scraping using Python (repeat session),2015-03-07,2:10 p.m.,2015-03-07,3:10 p.m.,False,Speakers: Paul Schreiber,M101,False
+Teach yourself to code (repeat session),2015-03-07,3:20 p.m.,2015-03-07,4:20 p.m.,False,Speakers: Becca Aaronson,M101,False
+Visualizing your data with R (repeat session),2015-03-07,3:20 p.m.,2015-03-07,4:20 p.m.,False,Speakers: Ronald Campbell,M107,False
+Mapping 2: Manipulating and editing geographic data with QGIS,2015-03-07,3:20 p.m.,2015-03-07,4:20 p.m.,False,Speakers: Michael Corey,M102,False
+Summing and grouping in SQLite,2015-03-07,3:20 p.m.,2015-03-07,4:20 p.m.,False,Speakers: Troy Thibodeaux,M109,False
+DocumentCloud,2015-03-07,3:20 p.m.,2015-03-07,4:20 p.m.,False,"Speakers: Anthony DeBarros, Ted Han",M106,False
+Joining and advanced operations in SQLite,2015-03-07,4:30 p.m.,2015-03-07,5:30 p.m.,False,Speakers: Matt Kiefer,M109,False
+Simple stats in Excel (repeat session),2015-03-07,4:30 p.m.,2015-03-07,5:30 p.m.,False,Speakers: Norm Lewis,M106,False
+Web inspector for complex scrapes,2015-03-07,4:30 p.m.,2015-03-07,5:30 p.m.,False,Speakers: Eric Sagara - M102,M102,False
+Intro to D3,2015-03-07,4:30 p.m.,2015-03-07,5:30 p.m.,False,"Speakers: Darla Cameron, Alex Bordens",M101,False
+Installation party,2015-03-08,9:00:00 a.m.,2015-03-08,10:00:00 a.m.,False,Speakers TBA,M109,False
+Just enough Django: Distributed data entry in the newsroom (pre-registered attendees only),2015-03-08,9:00:00 a.m.,2015-03-08,12:20 p.m.,False,"Speakers: Ken Schwencke, Ben Welsh - Ben Welsh presents a step-by-step guide to creating a simple web application that empowers you to enlist reporters in data entry and refinement. The 3-hour, hands-on tutorial will teach you how to take advantage of the Django Web framework's powerful administration panel, without bothering with all the other web developer crap. You will learn how to design database tables, load in data and quickly create a system for others to improve it. Preregistration is required and seating is limited. Laptops will be provided for the training.",M102,False
+Introduction to mapping: Importing and displaying data geographically with QGIS (repeat session),2015-03-08,9:00:00 a.m.,2015-03-08,10:00:00 a.m.,False,Speakers: Alex Richards,M107,False
+CAR wash,2015-03-08,9:00:00 a.m.,2015-03-08,10:00:00 a.m.,False,Speakers: Sean Sposito,M106,False
+Lightning fast data analysis with Tableau: Part one,2015-03-08,9:00:00 a.m.,2015-03-08,10:00:00 a.m.,False,"Speakers: Sarah Ryley, Jewel Loree",M101,False
+Mini Boot Camp (Sunday) *pre-registered attendees only,2015-03-08,9:00:00 a.m.,2015-03-08,12:20 p.m.,False,"Speakers: David Herzog, Denise Malan - This is a continuation of Saturday's hands-on workshop. &nbsp;Preregistered attendees only.",M105,False
+Advanced SQL using PostgreSQL,2015-03-08,9:00:00 a.m.,2015-03-08,10:00:00 a.m.,False,Speakers: Anthony DeBarros,M104,False
+Making your own Yo bot,2015-03-08,10:10 a.m.,2015-03-08,11:10 a.m.,False,Speakers: Matthew Waite,M104,False
+Lightning fast data analysis with Tableau: Part two,2015-03-08,10:10 a.m.,2015-03-08,11:10 a.m.,False,"Speakers: Ben Jones, Sarah Ryley",M101,False
+Under pressure: Real life in real time with breaking news (repeat session),2015-03-08,10:10 a.m.,2015-03-08,11:10 a.m.,False,Speakers: Stephen Stock,M109,False
+Mapping 2: Manipulating and editing geographic data with QGIS (repeat session),2015-03-08,10:10 a.m.,2015-03-08,11:10 a.m.,False,Speakers: Alex Richards,M107,False
+Take home a text editor,2015-03-08,11:20 a.m.,2015-03-08,12:20 p.m.,False,Speakers: Liz Lucas,M109,False
