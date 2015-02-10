@@ -8,7 +8,7 @@ def _init():
 
     # This creates the csv file using the csvkit module and writes to it, creating the header rows
     outfile = open("nicar15sched.csv", "w")
-    w = UnicodeCSVWriter(outfile,delimiter=",",encoding="Cp1252")
+    w = UnicodeCSVWriter(outfile,delimiter=",",encoding="utf-8")
     w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private'])
 
     private = False
