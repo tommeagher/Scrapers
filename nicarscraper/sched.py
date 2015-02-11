@@ -4,18 +4,20 @@ from datetime import date, timedelta
 from BeautifulSoup import BeautifulSoup
 from csvkit.unicsv import UnicodeCSVWriter
 
-def _init():
+def _init(conference, the_date, url):
+
+    #update the date of the conference
+    year_num = str(the_date.year)[2:]
+   
+    output_file=conference+year_num+"sched.csv"
 
     # This creates the csv file using the csvkit module and writes to it, creating the header rows
-    outfile = open("nicar15sched.csv", "w")
+    outfile = open(output_file, "w")
     w = UnicodeCSVWriter(outfile,delimiter=",",encoding="utf-8")
     w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private'])
 
     private = False
     all_day = False
-
-    #update the URL when you reuse the script next year
-    url = "http://ire.org/events-and-training/event/1494/"
 
     #use urllib2 to send a request to the URL and gather the html response
     response = urllib2.urlopen(url)
@@ -24,17 +26,11 @@ def _init():
     #read the html and parse it using Beautiful soup
     soup = BeautifulSoup(html)
 
-    #update the date of the conference
-    year = 2015
-    month = 3
-    adate = 4
-    the_date=date(year,month,adate)
-    d = timedelta(days=1)
-
     #The first day of the conference is a Wednesday, or 2, since the list starts counting at 0.
     day = 2
     days =[ 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday',
            'Sunday' ]
+    d = timedelta(days=1)
 
     #find the "ul class 'listview pane'" which wraps around each day's schedule and parse the items in it.
     for row in soup.findAll('ul', {"class" : "listview pane"}):
@@ -90,7 +86,7 @@ def _init():
             else:
                 desc = speaker2
                 
-            desc = desc + ' URL: ' + url
+            desc = desc + ' | URL: ' + url
             record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private)
 
     #write the record for the single class to the csv
@@ -131,4 +127,10 @@ def tag_session_with_topic(name):
         return output
 
 if __name__ == '__main__':
-    _init()
+    conference="nicar"
+    year = 2015
+    month= 3
+    day = 4
+    the_date=date(year,month,day)
+    url = "http://ire.org/conferences/nicar2015/schedule/"
+    _init(conference, the_date, url)
