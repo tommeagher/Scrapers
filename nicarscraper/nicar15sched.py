@@ -40,7 +40,9 @@ def _init():
     for row in soup.findAll('ul', {"class" : "listview pane"}):
         for row in row.findAll('h3', {"class" : "title3"}):
             name = row.find('a').string
-
+            page  = row.find('a').get('href')
+            url = 'http://ire.org' + page
+            
             topic = tag_session_with_topic(name)
 
             speaker = name.findNext('p')
@@ -87,6 +89,8 @@ def _init():
                 desc = desc
             else:
                 desc = speaker2
+                
+            desc = desc + ' URL: ' + url
             record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private)
 
     #write the record for the single class to the csv
