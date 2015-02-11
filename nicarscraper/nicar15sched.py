@@ -9,7 +9,7 @@ def _init():
     # This creates the csv file using the csvkit module and writes to it, creating the header rows
     outfile = open("nicar15sched.csv", "w")
     w = UnicodeCSVWriter(outfile,delimiter=",",encoding="utf-8")
-    w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private'])
+    w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private','URL'])
 
     private = False
     all_day = False
@@ -40,7 +40,9 @@ def _init():
     for row in soup.findAll('ul', {"class" : "listview pane"}):
         for row in row.findAll('h3', {"class" : "title3"}):
             name = row.find('a').string
-
+            page  = row.find('a').get('href')
+            url = 'http://ire.org' + page
+            
             topic = tag_session_with_topic(name)
 
             speaker = name.findNext('p')
@@ -87,7 +89,7 @@ def _init():
                 desc = desc
             else:
                 desc = speaker2
-            record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private)
+            record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private, url)
 
     #write the record for the single class to the csv
             w.writerow(record)
