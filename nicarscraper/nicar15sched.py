@@ -9,7 +9,7 @@ def _init():
     # This creates the csv file using the csvkit module and writes to it, creating the header rows
     outfile = open("nicar15sched.csv", "w")
     w = UnicodeCSVWriter(outfile,delimiter=",",encoding="utf-8")
-    w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private','URL'])
+    w.writerow(['Topic', 'Subject','Start Date','Start Time','End Date','End Time','All Day Event','Description','Location','Private'])
 
     private = False
     all_day = False
@@ -89,7 +89,9 @@ def _init():
                 desc = desc
             else:
                 desc = speaker2
-            record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private, url)
+                
+            desc = desc + ' URL: ' + url
+            record = (topic, name, the_date, start_time, the_date, end_time, all_day, desc, place, private)
 
     #write the record for the single class to the csv
             w.writerow(record)
