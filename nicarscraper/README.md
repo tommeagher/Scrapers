@@ -10,7 +10,7 @@ Step 2: Now that you have a calendar set up, you can import your csv into it (wi
 
 ![](screenshots/step2.png)
 
-Step 3: On the modal window, it will ask you to choose the file you want to use. Download nicar15sched.csv to your local machine, then add it with the chooser.
+Step 3: On the modal window, it will ask you to choose the file you want to use. Download [nicar15sched.csv](https://github.com/tommeagher/Scrapers/blob/master/nicarscraper/nicar15sched.csv) to your local machine, then add it with the chooser.
 
 Finally, before you hit "Import," be certain to choose the "nicar15" calendar, rather than your primary one.
 
