@@ -1,4 +1,4 @@
-#README
+#Import NICAR into GCal
 This csv is designed to make it easy to import into Google Calendar.
 
 Step 1: First, go into Gcal and click the dropdown arrow next to "My Calendar" and click "Create new calendar". Let's name it "nicar15".
