@@ -16,6 +16,6 @@ Finally, before you hit "Import," be certain to choose the "nicar15" calendar, r
 
 ![](screenshots/step3.png)
 
-Now you'll have all the sessions on your phone with GCal, and you'll be good to go. Now all you have to do is decide which sessions to hit.
+Now you'll have all the sessions on your phone with GCal. When the CSV changes as new sessions are added, just delete your "nicar15" calendar and repeat Steps 1 through 3 with the updated CSV. Then, all you have to do is decide which sessions to hit.
 
 Go!
