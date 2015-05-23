@@ -1,1 +1,3 @@
-A collection of scrapers and Python exercises.
+If you're looking for the NICAR/IRE schedule scraper, I've forked that to a new repo to completely refactor that code. You can find that repo here: https://github.com/tommeagher/irescraper
+
+Otherwise, here you'll find a stale collection of old scrapers and half-assy code I wrote while learning to Python.
